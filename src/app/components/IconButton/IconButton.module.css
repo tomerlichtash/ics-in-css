@@ -1,0 +1,19 @@
+.root {
+	--icon-size: 24px;
+
+	display: inline-flex;
+	align-items: center;
+}
+
+.hasLabel {
+	gap: 0.5em;
+}
+
+.icon {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: var(--icon-size);
+	height: var(--icon-size);
+	display: inline-block;
+}

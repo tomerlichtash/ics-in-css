@@ -1,0 +1,36 @@
+.root {
+	--footer-background: var(--foreground);
+	--footer-foreground: var(--background);
+
+	font-family: var(--font-ibm-mono);
+	padding: 4em 2em;
+	background-color: var(--footer-background);
+	color: var(--footer-foreground);
+	font-size: var(--font-size-sm);
+}
+
+.layout {
+	display: flex;
+	justify-content: space-between;
+	align-content: flex-start;
+	align-items: center;
+	flex-direction: row;
+}
+
+.col {
+	display: flex;
+	gap: 1em;
+}
+
+@media (max-width: 500px) {
+	.layout {
+		padding: 0 var(--gutter);
+	}
+}
+
+@media (max-width: 500px) {
+	.layout {
+		flex-direction: column;
+		gap: 1em;
+	}
+}

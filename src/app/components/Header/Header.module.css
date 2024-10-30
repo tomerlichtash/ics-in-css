@@ -1,0 +1,25 @@
+.root {
+	--header-background: var(--background);
+	--header-foreground: var(--foreground);
+
+	/* background-color: var(--header-background); */
+	color: var(--header-foreground);
+	padding: 4em var(--gutter) 2em;
+}
+
+.logo {
+	margin: 0;
+	gap: 0.25em;
+	--icsincss-text-gap: 0.25em;
+}
+
+.siteTitle {
+	font-size: var(--font-size-xl);
+	margin: 0;
+}
+
+.themeSelect {
+	position: fixed;
+	top: 1em;
+	right: 1em;
+}

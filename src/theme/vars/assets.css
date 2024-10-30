@@ -1,0 +1,34 @@
+:root {
+	--logo-github-dark: url(../../../public/github-mark-black.svg);
+	--logo-github-light: url(../../../public/github-mark-white.svg);
+	--logo-x-dark: url(../../../public/x-logo-black.png);
+	--logo-x-light: url(../../../public/x-logo-white.png);
+	--logo-facebook-dark: url(../../../public/fb-logo-white.png);
+	--logo-facebook-light: url(../../../public/fb-logo-white.png);
+
+	--logo-linkedin: url(../../../public/linkedin-logo.png);
+	--logo-npm: url(../../../public/npm-logo.svg);
+	--logo-github: var(--logo-github-light);
+	--logo-x: var(--logo-x-light);
+	--logo-facebook: var(--logo-facebook-light);
+}
+
+.github {
+	background-image: var(--logo-github);
+}
+
+.x {
+	background-image: var(--logo-x);
+}
+
+.facebook {
+	background-image: var(--logo-facebook);
+}
+
+.linkedin {
+	background-image: var(--logo-linkedin);
+}
+
+.npm {
+	background-image: var(--logo-npm);
+}
