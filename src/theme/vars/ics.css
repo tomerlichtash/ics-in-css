@@ -1,0 +1,14 @@
+:root {
+	--icsincss-color-white: var(--white);
+	--icsincss-color-blue: var(--blue);
+	--icsincss-color-red: var(--red);
+	--icsincss-color-yellow: var(--yellow);
+	--icsincss-color-black: var(--black);
+	--icsincss-pixel: 1em;
+	--icsincss-canvas-size: calc(var(--icsincss-pixel) * 5);
+	--icsincss-hint-position-xs: -2em;
+	--icsincss-hint-position-sm: -3em;
+	--icsincss-hint-position-md: -4em;
+	--icsincss-hint-position-lg: -5em;
+	--icsincss-text-gap: 1.5em;
+}

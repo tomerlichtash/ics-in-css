@@ -1,42 +1,88 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@import '../theme/theme.css';
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+	max-width: 100vw;
+	overflow-x: hidden;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-size: var(--font-size);
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	color: var(--foreground);
+	background: var(--start-gradient);
+	background: linear-gradient(to bottom, var(--start-gradient) 0%, var(--end-gradient) 100%);
+	font-family: var(--font-noto-serif);
+	font-weight: var(--font-weight-lg);
+	font-optical-sizing: auto;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+/* @media (prefers-color-scheme: dark) {
+	html {
+		color-scheme: dark;
+	}
+} */
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: var(--link-color);
+}
+a:hover {
+	--link-color: var(--red);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+p:first-child {
+	margin-top: 0;
+}
+
+.container {
+	max-width: var(--container-width);
+	margin: 0 auto;
+}
+
+.table {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+}
+
+.list {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	gap: 1em;
+}
+
+/* code-comment */
+.code-comment {
+	--comment-decoration-margin: 0.5em;
+	margin: 0 1em;
+	display: block;
+	margin-bottom: 1em;
+	opacity: 0.5;
+	font-size: var(--font-size-md);
+}
+.code-comment::before,
+.code-comment::after {
+	margin-left: -1em;
+	display: block;
+}
+.code-comment::before {
+	content: '/*';
+	margin-bottom: var(--comment-decoration-margin);
+}
+.code-comment::after {
+	content: '*/';
+	margin-top: var(--comment-decoration-margin);
 }

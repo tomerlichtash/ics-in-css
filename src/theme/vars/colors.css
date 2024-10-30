@@ -1,0 +1,20 @@
+:root {
+	--white: white;
+	--blue: #43a0fd;
+	--red: #fd5557;
+	--yellow: #fffe77;
+	--black: #232323;
+	--darkness: #101010;
+
+	--background: var(--white);
+	--foreground: var(--black);
+	--void: var(--darkness);
+
+	--surface: var(--white);
+	--contrast: var(--black);
+
+	--link-color: var(--blue);
+
+	--start-gradient: var(--white);
+	--end-gradient: rgba(225, 225, 225, 1);
+}
