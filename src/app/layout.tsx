@@ -33,7 +33,10 @@ export default function RootLayout({
 			suppressHydrationWarning
 		>
 			<body className={`${notoSerif.variable} ${ibmMono.variable}`}>
-				<ThemeProvider>
+				<ThemeProvider
+					enableSystem={false}
+					defaultTheme="light"
+				>
 					<Header />
 					{children}
 					<Footer />
