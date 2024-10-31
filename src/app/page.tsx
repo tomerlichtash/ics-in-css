@@ -1,9 +1,9 @@
 import { Text } from '@tomerlichtash/ics-css-react';
-import Grid from './components/Grid/Grid';
-import Example from './components/Example/Example';
+import Grid from '../components/Grid/Grid';
+import Example from '../components/Example/Example';
 import classNames from 'classnames';
 import styles from './page.module.css';
-import IconButton from './components/IconButton/IconButton';
+import IconButton from '../components/IconButton/IconButton';
 
 export default function Home() {
 	return (
