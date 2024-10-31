@@ -15,10 +15,11 @@ type ThemeButtonProps = {
 };
 
 export const ThemeSelect = ({ className }: ThemeSelectProps) => {
-	const { theme, setTheme } = useTheme();
+	const { setTheme } = useTheme();
 
 	const ThemeButton = useMemo(
 		() =>
+			// eslint-disable-next-line react/display-name
 			({ children, themeName, className, ...rest }: PropsWithChildren<ThemeButtonProps>) => {
 				return (
 					<button
@@ -31,7 +32,7 @@ export const ThemeSelect = ({ className }: ThemeSelectProps) => {
 					</button>
 				);
 			},
-		[theme],
+		[setTheme],
 	);
 
 	return (

@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
 import { ThemeProvider } from 'next-themes';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
 
 const notoSerif = localFont({
 	src: './fonts/NotoSerif.ttf',

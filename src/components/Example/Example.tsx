@@ -31,7 +31,7 @@ export default function Example({
 			{spell ? (
 				<Spell
 					className={styles.spellBox}
-					size={size || 'xl'}
+					size={size || 'lg'}
 					noCaption={(hideHint && !visible) || noCaption}
 				>
 					{children}
@@ -39,7 +39,7 @@ export default function Example({
 			) : (
 				<Text
 					className={styles.spellBox}
-					size={size || 'xl'}
+					size={size || 'lg'}
 					noCaption={(hideHint && !visible) || noCaption}
 				>
 					{children}

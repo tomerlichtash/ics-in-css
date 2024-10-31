@@ -79,10 +79,10 @@ p:first-child {
 	display: block;
 }
 .code-comment::before {
-	content: '/*';
+	content: '\002F\002A';
 	margin-bottom: var(--comment-decoration-margin);
 }
 .code-comment::after {
-	content: '*/';
+	content: '\002A\002F';
 	margin-top: var(--comment-decoration-margin);
 }
