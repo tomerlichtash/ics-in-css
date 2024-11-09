@@ -10,6 +10,7 @@
 		"format": "prettier src -w"
 	},
 	"dependencies": {
+		"@next/third-parties": "^15.0.3",
 		"@tomerlichtash/ics-css-react": "0.1.4",
 		"classnames": "^2.5.1",
 		"next": "15.0.2",
