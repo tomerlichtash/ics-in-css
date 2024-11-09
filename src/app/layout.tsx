@@ -4,6 +4,7 @@ import './globals.css';
 import { ThemeProvider } from 'next-themes';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const notoSerif = localFont({
 	src: './fonts/NotoSerif.ttf',
@@ -41,6 +42,7 @@ export default function RootLayout({
 					{children}
 					<Footer />
 				</ThemeProvider>
+				<GoogleAnalytics gaId="G-7K7T4711EZ" />
 			</body>
 		</html>
 	);
