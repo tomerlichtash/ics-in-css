@@ -37,11 +37,11 @@ export default function Home() {
 
 					<Example output="Man overboard">When used alone [[oscar]] means</Example>
 
-					<p>When paried in two&apos;s, flags take on more specific meanings:</p>
+					<p>When paired in two&apos;s, flags take on more specific meanings:</p>
 
 					<Example
 						spell
-						output="I wish you a pleasent voyage"
+						output="I wish you a pleasant voyage"
 					>
 						uw
 					</Example>
@@ -56,7 +56,7 @@ export default function Home() {
 					</Example>
 
 					<Text size="sm">
-						Three letter signals that being with [[mike]] are reserved to communicate medical
+						Three letter signals that begin with [[mike]] are reserved to communicate medical
 						emergencies.
 					</Text>
 
@@ -85,7 +85,7 @@ export default function Home() {
 				<div className={styles.section}>
 					<h2 className={styles.sectionTitle}>Spelling</h2>
 					<div>
-						<p>To begin spelling signal this:</p>
+						<p>To begin spelling, signal this:</p>
 						<Example
 							spell
 							output="The words which follow are in plain language"
@@ -118,7 +118,7 @@ export default function Home() {
 							same code.
 						</p>
 						<Text size="sm">
-							For example, [[victor]] was assigned &quot;I require assistance&quot; as coded
+							For example, [[victor]] was assigned &quot;I require assistance&quot; as a coded
 							meaning.
 						</Text>
 					</div>
